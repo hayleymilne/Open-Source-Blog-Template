@@ -1,0 +1,451 @@
+/* When Customizing this CSS page, the lines that are the simplest to customize have comments along side the line of text with a how to, other lines may be 
+Customized of course but they are mostly to do with the size of elements or sections of the template such as the sidebar, It is recommended you change this
+page after done editing the HTML pages*/
+
+/* Importing Title Font don't edit this section*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+@font-face{
+	font-family: Bebas;
+	src:url('BebasNeue Regular.otf');
+}
+/* These are On all pages */
+/* Allows for proper scrolling don't edit this section*/
+html,body,.sidebar, #content{
+   height: 100%;  
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+/* Background colour of whole webpage */
+body{
+	background-color:#FEFEFE; /*Change this colour if changing content background to the same colour use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour*/
+}
+/* Header consists of social media icons and greeting */
+#header{
+	width: 100%
+	top: 0px;
+	position: absolute;
+	margin-left: 340px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	background-color: #FEFEFE; /*Change colour of greeting seen at the top of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour*/
+	width:70%;
+	height: 25px;
+	font-family: Bebas;
+	font-weight: bold;
+	font-size: 6;
+	z-index: 1; 
+}
+/* Social media links at top fo page within header */
+.fa-facebook-square,.fa-instagram,.fa-tumblr-square,.fa-twitter-square{
+	top:2px;
+	position: relative;
+	color: black; /* colour of social media icons use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour*/
+}
+.fa-facebook-square:hover, .fa-instagram:hover, .fa-tumblr-square:hover, .fa-twitter-square:hover{
+	color: #CECECE;
+	animation:icons .1s;
+	animation-iteration-count:1; 
+	animation-fill-mode: forwards;
+	-webkit-animation:icons .1s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count:1; /*Safari and Chrome*/
+	-webkit-animation-fill-mode: forwards; /*Safari and Chrome*/
+}
+@keyframes icons{
+	from{top:2px;}
+	to{top:7px;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes icons{
+	from {top:2px;}
+	to {top:7px;}
+}
+/*Sidebar located to the left of page with menu and photo */
+#sidebar{
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	position: absolute;
+	width: 300px;
+	min-width:250px;
+	background-color:#F5F5F5; /*Change colour of sidebar seen at the left of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour*/
+	overflow: hidden;
+	border-right: 3px  solid #CECECE; /*Change colour of greeting sidebar's border which is a slightly darker grey at the left of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour
+	Or change the word solid to:dashed,dotted,double,groove,ridge to change how the dark grey line appears*/
+	color: black;  /* All the font's colour to black unless specified specifically sidebar, this reduces the amount of repetition needed use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* Image in sidebar */
+#homeImage{
+	left:50%;
+	top:90px;
+	position: absolute;
+	width: 210px;
+	height: 250px;
+	margin-left: -105px;
+}
+/* Name under image in Sidebar */
+#name{
+	width: 250px;
+	height: 30px;
+	top: 360px;
+	position: absolute;
+	left:50%;
+	margin-left: -125px;
+	margin-top: 5px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Bebas;
+}
+/*Short bio under name in Sidebar */
+#bio{
+	left:50%;
+	top: 400px;
+	position: absolute;
+	width: 260px;
+	height: 50px;
+	overflow: hidden;
+	margin-left: -130px;
+	margin-top: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+/* Download button */
+#menuitems{
+	top: 465px;
+	left: 50%;
+	position: absolute;
+	width:200px;
+	height: 160px;
+	counter-reset: cnt;
+	display: block;
+	margin-left: -100px;
+	text-align: center;
+}
+#menuitems div::after{
+	counter-increment: cnt;
+	display:block;	
+}
+#menuitems
+div::before{
+	bottom:10px;
+	left: 50%;
+	position:absolute;
+	width:200px;
+	/*Section can be deleted if you don't want the message to appear about downloading this template remove text FROM HERE*/
+	content:attr(data-title);
+	margin-left: -100px;
+	color:#666666; /*Change the colour of the words "click to download on github" seen at the top of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour*/
+	opacity:0;
+	transition:opacity 0.4s;
+	-webkit-transition:opacity 0.4s;
+}/*If  removing section keep this bracket!*/
+#menuitems div:hover::before{
+	opacity:1;
+}
+/*TO HERE*/
+/* About Menu button or what should be used for a new menu button */
+.menubuttons{
+	padding:8px 8px;
+	background-color:#ECECEC; /*Change background colour of Menu items, ABOUT and DOWNLOAD on the left of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	color:black; /* Change the font colour of menu items ABOUT and DOWNLOAD on the left of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	margin:8px;
+	cursor:default;
+	border: 1px solid  #C1C1C1;   /*Change colour of the menu item's border which is by default a slightly darker grey at the left of the page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour
+	Or change the word solid to:dashed,dotted,double,groove,ridge to change how the dark grey border appears*/
+	font-family: Bebas;
+}
+.menubuttons:hover{
+	color: #D6D6D6; /* Change the font colour of menu items ABOUT and DOWNLOAD on the left of the page when being hovered on use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/*Right of page containing titles of blogposts,time stamps,header,and blogposts */
+#content{
+	top: 0px;
+	position: absolute;
+	max-width: 74%;
+	min-width: 1%;
+	margin-left: 300px;
+	margin-top: 25px;
+	background-color:#FEFEFE; /*Change background colour of the right side of the page where the blog posts appear use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	overflow-x:hidden;
+	overflow-y:scroll; 
+	z-index: 0;
+	color: black; /* Colour of every thing inside content, unless specificed otherwise this reduces repitition http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* Grey line after readmore on main page,  after longbio in About page and after blogposts */
+hr{
+	left:50%;
+	position: relative;
+	width:500px;
+	height: 2px;
+	margin-left: -250px;
+	background-color: #CECECE; /* Change the colour of the line under each blog post summary and under the long 
+	bio in the About page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	color: #CECECE; /* Change the colour of the line under each blog post summary and under the long bio 
+	in the About page use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	border-width:0;
+}
+/* All links */
+a:link{
+	text-decoration: none;
+	color: black; /* Change the colour all links (readmore,social media icons, and the menu items) prior to being visited http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+a:visited{
+	text-decoration: none;
+	color: black; /* Change the colour all links (readmore,social media icons, and the menu items) 
+	after it has been visted use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+a:hover{
+	text-decoration: none;
+	color:#D6D6D6; /* Change the colour all links (readmore,social media icons, and the menu items) 
+	while it is being hovered over use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+a:active{
+	text-decoration: none;
+	color: #D6D6D6;/* Change this colour to the same as the one in hover use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* After these sections are page specific*/
+/* this section is for the enterance page don't edit*/
+.shakeimage{
+	position:relative
+}
+/* These sections are for the Index page, shown on homepage, contains summary, timestamp(h2), blogpost title(h1) and readmore */ 
+/* Font for subtitles, timestamps and blog post titles */
+h1,h2,h4{
+	font-family: Bebas;
+}
+/* contains h1,h2,summary,imagesummary, readmore */
+.blogpostsummary{
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 60px;
+	padding-bottom: 5%;
+}
+/* Image on  page left to summary */
+.imagesummary{
+	width: 200px;
+	height:100%;
+	max-height:200px;
+	margin-bottom: 10px;
+	position: relative;
+	padding-right: 20px;
+	float: left;
+}
+/* Summary of blog post used on homepage (in .summaryblogpost) */
+.summary{
+	text-indent: 35px;
+	font-size: 5; /* change font size to another number to increase or decrease size*/
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height:100% ;
+	min-height:200px;
+	margin-bottom: 35px;
+}
+/* clickable readmore on home page */
+.readmore{
+	font-weight: bolder; /* Change bold to: bolder, lighter or normal to change the appearance of readmore link */
+	font-size: 18px;
+	font-family: Bebas;
+	text-align: left;
+	margin: 10px;	
+}
+/* These sections are on the blogpost2.html and blogpost1.html */
+/* shown after clicking readmore contains full(blogpost), timestamp(h4) and blogpost title(h1), imagepost,fa-angle-double-left, 
+fa-angle-double-right, subtitle(h3) and quotation ( quote and fa-quote-left)  */
+.fullblogpost{
+	width: 90%;
+	margin-top: 40px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+}
+/*Full blog post used after clicking readmore, contains imagepost,fa-angle-double-left, 
+fa-angle-double-right, subtitle(h3) and quotation ( quote and fa-quote-left) */
+.full,.full2
+{
+	display:block;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px; 
+	font-weight:normal; /* Change bold to: bolder, lighter or normal to change the appearance of blogpost paragraphs*/
+}
+/*Full blog post used after clicking readmore, contains imagepost,fa-angle-double-left, 
+fa-angle-double-right, subtitle(h3) and quotation ( quote and fa-quote-left) */
+.full{
+	text-indent: 35px;
+	margin-top:10px; 
+}
+/* back and forward arrows at the bottom of the page */
+.fa-angle-double-right , .fa-angle-double-left{
+	left: 50%;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left: -50px;
+	width: 100px;
+	font-weight: lighter; /* Change bold to: bolder, lighter or normal to change the appearance of  arrows */
+	position: relative;
+	color: #5DBCD2; /* Change this colour to the arrows use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+.fa-angle-double-right:hover,.fa-angle-double-left:hover{
+	font-weight: bold;
+}
+/* These sections are specific to blogpost1.html */
+/* Subtitles in blog posts */
+h3{
+	font-size: 20px;
+	font-family: Bebas;
+	text-indent:0px;
+}
+/* Quotation in blog post(full) */
+#quote{
+	font-family: Bebas;
+	font-weight: normal; /* Change bold to: bolder, lighter or normal to change the appearance of the quotation*/
+	font-size: 35px;
+	color: black; /* Change the font colour of the quote shown within the text based blog posts in (full) http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* Fancy quotation marks in quote */
+.fa-quote-left{
+	float: right;
+	width: 25%;
+	height: 30%;
+	padding: 30px;
+	margin-right: 30px;
+	font-weight: bolder; /* Change bold to: bolder, lighter or normal to change the appearance of the quotation marks*/
+	font-size: 35px;
+	color: #5DBCD2;/* Change the colour of the quotation marks of the quotation use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* Caption under images, or paragraphs */
+.caption{
+	margin-top: 0px;
+	width:98%;
+	font-size: .8em;
+}
+/* Image in blog post, used in text based blog post */
+/* If you want to have images of different sizes in different blog posts copy and paste the next section and change
+imagepost to another name replace that name where you  see <img id="imagepost" */
+#imagepost{
+	width: 50%; /*Change this percentage to change width of image in textbased blog posts */
+	height: 500px; /*Change this number to change height of image in text based blog posts */
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-right: 10px;
+	position: relative;
+	float: left; /* Change left to right to change the side of the page of image in text based blog posts */
+}
+/* surrounds postimage based and postimagebased2 so that pinterest image will appear */
+.image{
+	position: relative;
+	max-height: 600px;
+}
+.image:hover {
+	opacity: .8;
+}
+.image:hover .fa-pinterest{ 
+	display: initial;
+	opacity: 1;
+	color: black;
+}
+.image:hover .hoverimage{ 
+	display: initial;
+	opacity: 1;
+	color: black;
+}
+/*  Used for images in image based blog posts */
+/* Image in blogpost2.html, this is used for wide images taking up entire width of the page */
+.postimagebased{
+	height:400px;
+	width:100%;
+	padding: 10px 0px;
+	margin-top: 10px;
+}
+/* Image in blogpost2.html, this is used for thinner images that you wish to show side by side */
+.postimagebased2{
+	height:500px;
+	width:45%;
+	padding-right: 5%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	float: left;
+}
+/* Pinterest logo appearing on images */
+.fa-pinterest{
+	position: absolute;
+	display: none;
+	left: 10px;
+	top: 32px;
+	opacity: 0;
+}
+/* Recipe box */
+.recipe{
+	width:98%;
+	height:100%;
+	background-color:#E6E6E6;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 14px;
+}
+ul li:first-letter{
+	color: #5DBCD2; /* Change the colour of the first letter within the recipe box bio use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	font-weight: bold; /* Change bold to: bolder, lighter or normal to change the first letter in the recipe box lists*/
+}
+/* These sections are for the About page */ 
+/* Name in About page */
+#aboutname{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	font-size: 80px;
+	text-align: center; /* Change center to: left, right or justify to Change where your Name appears on the About page*/
+}
+/* Bio underneath Name in About page */
+#shortbio{
+	top: 120px;
+	left: 50%;
+	position: relative;
+	height: 100px;
+	width: 400px;
+	margin-left:-200px;
+	text-align: center; /* Change center to: left, right or justify to Change where the  shorter bio appears on the About page*/
+	overflow: hidden;
+	font-family: Bebas;
+	color: black; /* Change the colour of the short bio use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+}
+/* Personal photo in About page */
+#aboutphoto{
+	padding: 10px;
+	float: left; /*Change left to right to change where the  personal image on The About page appears*/
+	width: 30%;
+	height: 42%;
+	border-radius: 50%; /* Change percentages to change the shape of the image, if you change this percentage change th next two to the same percentage */
+	-moz-border-radius:50%; /* for Firefox change percentages to change the shape of the image */
+	-webkit-border-radius:50%; /* for Safari, change percentages to change the shape of the image */
+}
+/* Main bio in About page */
+#longbio{
+	right: 0px;
+	position: absolute;
+	top: 220px;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	color:black; /* Change the colour of the long bio use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	text-indent: 35px;
+	margin-bottom: 30px;
+}
+/* First letter in long Bio */
+#longbio:first-letter{
+	color: #5DBCD2; /* Change the colour of the first letter within the long bio use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	font-size: 200%; /* Change the percentage to change the size of the first letter*/
+	font-weight: bold; /* Change bold to: bolder, lighter or normal to change the apperance of the first letter*/
+}
+/*Email link shown after long bio */
+#email{
+	position:relative;
+	left:50%;
+	width: 200px;
+	color: black; /* Change the colour of the email link after the long bio use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
+	margin-left: -100px;
+}
