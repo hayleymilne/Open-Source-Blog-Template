@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<!--This template is for a picture based blog post, such as recipes or DIY posts here you will add content 
+	to your blog edit this section first then edit the CSS. Instructions will provided within these comments, read them before making changes  -->
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<link rel="stylesheet" href="font-awesome.css">
+	<title>Open source Blog Template</title>
+	<!-- Write in what you wish to appear in browser tab -->
+</head>
+	<body>
+		<div id="header">
+			<!--to avoid repetition add your links in on one page then copy and paste this section to other pages-->
+			<a href="https://www.facebook.com"><!--Put your facebook page link within the " " -->
+					<i class="fa fa-facebook-square fa-lg"></i></a>
+			<a href="http://www.instagram.com"><!--Put your instagram profile link within the " " -->
+					<i class="fa fa-instagram fa-lg"></i></a>
+			<a href="http://www.tumblr.com"> <!--Put your tumblr link within the " " -->
+					<i class=" fa fa-tumblr-square fa-lg"></i></a>
+			<a href="http://www.twitter.com"><!--Put your twitter profile link within the " " -->
+					<i class="fa fa-twitter-square fa-lg"></i></a>		
+				<script type="text/javascript">
+				var greeting= new Date();
+				var hours =greeting.getHours();
+				if (hours==1||hours==2||hours==3||hours==4||hours==5) {
+					document.write("Time for sleep isn't?")
+				}
+				if (hours>18||hours==0){
+					document.write("Have a lovely night")
+				}
+				if (hours==5||hours==6||hours==7||hours==8||hours==9||hours==10||hours==11) {
+					document.write("Good Morning")
+				}
+				if (hours==12||hours==13||hours==14||hours==15||hours==16||hours==17||hours==18){
+					document.write("Good Afternoon")
+				};
+				</script>
+		</div>
+	<script type="text/javascript">
+	/* This function Sets the time for each blog post*/
+	function timeStamp(year,month,day,hour,min,sec)
+	{
+		var time= new Date();
+		time.setFullYear(year,month,day);
+		time.setHours(hour,min,sec);
+		document.write(time);
+	}
+</script>
+	<div id="sidebar">
+	<a href="index.html"><img id="homeImage" alt="home" src=" " onMouseOver="this.src=''; " onMouseOut="this.src='';"></a>
+		<!-- Add link to image " " after src=  this image will show in sidebar-->
+		<div id="name">Write Your Name/Blog's Name here</div>
+		<div id="bio"> Put Your blog bio here, keep this very short as you have an about page to fill out
+</div>
+		<div id="menuitems">
+
+			<div class="menubuttons" ><a href="about.html">About</a> </div>
+			<div class="menubuttons" data-title=" Click to download this blog template on github"><a href="https://github.com/hayleymilne"> <i class="fa fa-download"></i>  Download</a></div>
+	</div>
+	</div>
+	<div id="content">
+	
+ <div class="fullblogpost">
+ <h1>Title of Blog Post</h1>
+ <h4>
+ 		<script type="text/javascript">
+	document.getElementById("timestamp").innerHTML=timeStamp(2003,12,08,12,12,0);
+	</script>
+</h4>
+<div class="full2">
+<div class="image">
+    <!-- Add link to image " " after src= -->
+	<img class="postimagebased" alt="" src=" "/>
+    <!--"http://www.pinterest.com/pin/create/button/?url= Place url of page here! &amp;media=Place url of image here!&amp;\description= Place description of webpage here-->
+    <a href="http://www.pinterest.com/pin/create/button/?url=&amp;media=&amp;description="><i class="fa fa-pinterest fa-3x"></i></a>
+</div>
+<p class="caption">This full blog post is for picture based content such as recipes, DIY projects and travel pictures, where underneath images you may wish to have a caption, image from </p>
+<div class="full">
+Below is just an example the lists could be used for objects required for a DIY project and the steps to complete them. Then below in this space you could discuss your thoughts on your recipe, tips to maybe improve it, or when you think it should be made. Additionally if this post is based around travel you could discuss your trip and if the post is DIY you could talk about where you’re using your completed project and tips on how to make it. You could also place this paragraph after a photo. Below is just an example the lists could be used for objects required for a DIY project and the steps to complete them. Then below in this space you could discuss your thoughts on your recipe, tips to maybe improve it, or when you think it should be made. Additionally if this post is based around travel you could discuss your trip and if the post is DIY you could talk about where you’re using your completed project and tips on how to make it. You could also place this paragraph after a photo</div>
+<h3>Subtitle in Blog post</h3>
+<div class="full">
+Below is just an example the lists could be used for objects required for a DIY project and the steps to complete them. Then below in this space you could discuss your thoughts on your recipe, tips to maybe improve it, or when you think it should be made. Additionally if this post is based around travel you could discuss your trip and if the post is DIY you could talk about where you’re using your completed project and tips on how to make it. You could also place this paragraph after a photos.</div>
+
+<div class="image">
+	<!-- Add link to image " " after src= -->
+    <img class="postimagebased2" alt="" src="https://31.media.tumblr.com/176b9dfea62e0e0598e61c339f3c30ef/tumblr_n36eq87Vdn1smg8edo1_500.jpg"/>
+    <!--"http://www.pinterest.com/pin/create/button/?url= Place url of page here! &amp;media=Place url of image here!&amp;\description= Place description of webpage here-->
+    <a href="http://www.pinterest.com/pin/create/button/?url=&amp;media=&amp;description="><i class="fa fa-pinterest fa-3x"></i></a>
+    <!-- Add link to image " " after src= -->
+    <img class="postimagebased2" alt="" src=" "/>
+    <!--"http://www.pinterest.com/pin/create/button/?url= Place url of page here! &amp;media=Place url of image here!&amp;\description= Place description of webpage here-->
+    <a href="http://www.pinterest.com/pin/create/button/?url=&amp;media=&amp;description="><i class="fa fa-pinterest fa-3x"></i></a>
+</div>
+<p class="caption">This full blog post is for picture based content such as recipes, DIY projects and travel pictures, where underneath images you may wish to have a caption photo from </p>
+<div class="recipe">
+<h3>Example Recipe ( 100% inedible )</h3>
+<ul>
+	<li>1 Cup of flour</li>
+	<li> 1 Cup of butter</li>
+	<li>1/2 Sugar</li>
+	<li> 2 Eggs</li>
+	<li> 1 Tbsp. Lemon zest</li>
+	<li> 2 Cups of blueberries</li>
+	<li> 1 Dash of vanilla</li>
+</ul>
+<h3>Subtitle for instructions</h3>
+<p class="caption"> this is where you could list steps for instructions </p>
+<ol>
+	<li> Preheat oven to 400 degrees</li>
+	<li> cream butter and sugar together, once creamed together add vanilla</li>
+	<li> whisk in two eggs </li>
+	<li> Mix in flour </li>
+	<li>Fold in blueberries and lemon zest</li>
+	<li>Bake for 25 minutes in preheated oven</li>
+</ol>
+</div>
+<p class="full">Above is just an example the lists could be used for objects required for a DIY project and the steps to complete them. Then below in this space you could discuss your thoughts on your recipe, tips to maybe improve it, or when you think it should be made. Additionally if this post is based around travel you could discuss your trip and if the post is DIY you could talk about where you’re using your completed project and tips on how to make it. You could also place this paragraph after photos. Above is just an example the lists could be used for objects required for a DIY project and the steps to complete them. Then below in this space you could discuss your thoughts on your recipe, tips to maybe improve it, or when you think it should be made. Additionally if this post is based around travel you could discuss your trip and if the post is DIY you could talk about where your using your completed project and tips on how to make it. You could also place this paragraph after a photos.</p>
+<h3><a href="index.html">Return to blog posts</a></h3>
+
+</div>	
+<hr>
+ <a href="blogpost1.html"><!-- post link to next blog post in previous " " if there is no next post delete from <a href to </a>--> <i class="fa fa-angle-double-left fa-2x"></i></a><a href="blogpost1.html"><!--post link to previous blog post in previous " "  if there is no previous post delete from <a href to </a>--><i class="fa fa-angle-double-right fa-2x"></i></a>	
+</div>
+</div>
+</body>
+</html>
