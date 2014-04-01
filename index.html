@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- This template is for the homepage, showing summaries of blog posts, here you will add content to your blog edit this section first then edit the CSS. Instructions will provided within these comments, read them before making changes -->
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<link rel="stylesheet" href="font-awesome.css">
+	<title>Open source Blog Template</title>
+	<!-- Write in what you wish to appear in browser tab -->
+</head>
+<body>
+	<script type="text/javascript">
+	/* This function Sets the time for each blog post*/
+	function timeStamp(year,month,day,hour,min,sec)
+	{
+		var time= new Date();
+		time.setFullYear(year,month,day);
+		time.setHours(hour,min,sec);
+		document.write(time);
+	}
+	</script>
+			<div id="header">
+				<!--to avoid repitition add your links in on one page then copy and paste this section to other pages-->
+			<a href="https://www.facebook.com"><!--Put your facebook page link within the " " -->
+					<i class="fa fa-facebook-square fa-lg"></i></a>
+			<a href="http://www.instagram.com"><!--Put your instagram profile link within the " " -->
+					<i class="fa fa-instagram fa-lg"></i></a>
+			<a href="http://www.tumblr.com"> <!--Put your tumblr link within the " " -->
+					<i class=" fa fa-tumblr-square fa-lg"></i></a>
+			<a href="http://www.twitter.com"><!--Put your twitter profile link within the " " -->
+					<i class="fa fa-twitter-square fa-lg"></i></a>		
+				<script type="text/javascript">
+				var greeting= new Date();
+				var hours =greeting.getHours();
+				if (hours==1||hours==2||hours==3||hours==4||hours==5) {
+					document.write("Time for sleep isn't?")
+				}
+				if (hours>18||hours==0){
+					document.write("Have a lovely night")
+				}
+				if (hours==5||hours==6||hours==7||hours==8||hours==9||hours==10||hours==11) {
+					document.write("Good Morning")
+				}
+				if (hours==12||hours==13||hours==14||hours==15||hours==16||hours==17||hours==18){
+					document.write("Good Afternoon")
+				};
+				</script>
+		</div>
+	<div id="sidebar">
+<a href="#"><img id="homeImage" alt="home" src="" onMouseOver="this.src=''; " onMouseOut="this.src='';"></a>
+		<!-- Add link to image with the " " after src=  this image will show in sidebar-->
+		<div id="name">Write Your Name/Blog's Name here</div>
+		<div id="bio">  Put Your blog bio here, keep this very short as you have an about page to fill out
+</div>
+		<div id="menuitems">
+			<div class="menubuttons" > <a href="about.html">About</a>
+			</div>
+			<div class="menubuttons" data-title=" Click to download this blog template on Github">
+				<a href="https://github.com/hayleymilne">
+					<i class="fa fa-download"></i> Download</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+<!-- To use this style of summary copy from here to </div> after <hr> -->
+	<div class="blogpostsummary">
+			<h1>Title of Blog Post</h1> 
+			<h2>
+				<script type="text/javascript">
+				document.getElementById("timestamp").innerHTML=timeStamp(2014,/*put year in previously number*/ 03,/* put month in previously number ranges from 0-11, NOT 1-12 */07,/*put day in previously number*/12,/*put hour in previously number*/ 12,/*put minute in previously number if applicable*/ 0 /* previous number is for seconds, leave as one*/);
+			</script>
+			</h2>
+<p class="summary">
+	<!-- Within the src=" " add the file name of your image which appears next to the summary -->
+	<img class="imagesummary" alt="" src=" "/>
+	This is where a summary of the blog post linked below would be written. Read more will be linked to take the user to the page with the full blog post. Above is the timestamp when the blog post was written. The summary should be fairly short but still substantial as having too many summaries appear on the page can clutter its appearance and more will show when less is written as the height is based on percentage, not a set number. The read more link below will lead you too image based blog post example.
+</p>
+<!-- Post link to full blog post in href=" "  below -->
+<div class="readmore"><a href="blogpost2.html">Read More</a></div>
+<hr>
+		</div>
+<!-- To use this style of summary copy from here to </div> after <hr> -->		
+<div class="blogpostsummary">
+			<h1>Title of Blog Post</h1>
+			<h2>
+				<script type="text/javascript">
+				document.getElementById("timestamp").innerHTML=timeStamp(2014,/*put year in previously number*/ 03,/* put month in previously number ranges from 0-11, NOT 1-12 */07,/*put day in previously number*/12,/*put hour in previously number*/ 12,/*put minute in previously number if applicable*/ 0 /* previous number is for seconds, leave as one*/);
+			</script>
+			</h2>
+<p class="summary">
+	This is where a summary of the blog post linked below would be written. Read more will be linked to take the user to the page with the full blog post. Above is the timestamp when the blog post was written. The summary should be fairly short but still substantial as having too many summaries appear on the page can clutter its appearance and more will show when less is written as the height is based on percentage, not a set number. This read more link will lead you to a text based blog post example.
+</p>
+<div class="readmore"><a href="blogpost1.html">Read More</a></div>
+	<hr>
+<!-- Post link to full blog post in href=" "  below -->
+		</div>
+		
+</div>	
+</body>
+</html>
