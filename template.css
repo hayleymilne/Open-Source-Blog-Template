@@ -164,7 +164,7 @@ div::before{
 	top: 0px;
 	position: relative;
 	max-width: 74%;
-	min-width: 1%;
+	min-width: 350px;
 	margin-left: 300px;
 	margin-top: 25px;
 	background-color:#FEFEFE; /*Change background colour of the right side of the page where the blog posts appear use http://www.w3schools.com/tags/ref_colorpicker.asp to choose a colour */
