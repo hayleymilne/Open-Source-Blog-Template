@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- This template is for the About page of the blog here you will add content to your blog edit this section first then edit the CSS. Instructions will provided within these comments, read them before making changes  -->
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<link rel="stylesheet" href="font-awesome.css">
+		<title>Open Source Blog Template</title>
+	<!-- Write in what you wish to appear in browser tab -->
+</head>
+	<body>
+		<div id="header">
+			<!--to avoid repetition add your links in on one page then copy and paste this section to other pages-->
+			<a href="https://www.facebook.com"><!--Put your Facebook page link within the " " -->
+					<i class="fa fa-facebook-square fa-lg"></i></a>
+			<a href="http://www.instagram.com"><!--Put your instagram profile link within the " " -->
+					<i class="fa fa-instagram fa-lg"></i></a>
+			<a href="http://www.tumblr.com"> <!--Put your tumblr link within the " " -->
+					<i class=" fa fa-tumblr-square fa-lg"></i></a>
+			<a href="http://www.twitter.com"><!--Put your twitter profile link within the " " -->
+					<i class="fa fa-twitter-square fa-lg"></i></a>		
+				<script type="text/javascript">
+				var greeting= new Date();
+				var hours =greeting.getHours();
+				if (hours==1||hours==2||hours==3||hours==4||hours==5) {
+					document.write("Time for sleep isn't?")
+				}
+				if (hours>18||hours==0){
+					document.write("Have a lovely night")
+				}
+				if (hours==5||hours==6||hours==7||hours==8||hours==9||hours==10||hours==11) {
+					document.write("Good Morning")
+				}
+				if (hours==12||hours==13||hours==14||hours==15||hours==16||hours==17||hours==18){
+					document.write("Good Afternoon")
+				};
+				</script>
+		</div>
+	<div id="sidebar">
+	<a href="index.html"><img id="homeImage" alt="home" src="" onMouseOver="this.src=''; " onMouseOut="this.src='';"></a>
+		<!-- Add link to image " " after src=  this image will show in sidebar-->
+		<div id="name">Write Your Name/Blog's Name here</div>
+		<div id="bio"> Put Your blog bio here, keep this very short as you have an about page to fill out
+</div>
+		<div id="menuitems">
+			<div class="menubuttons" > <a href="#">About</a></div>
+			<div class="menubuttons" data-title=" Click to download this blog template on github"><a href="https://github.com/hayleymilne"> <i class="fa fa-download"></i>  Download</a></div>
+	</div>
+	</div>
+	<div id="content">
+		<div>
+			<h1 id="aboutname">Your Name </h1>
+			<p id="shortbio">This could be used an introduction to the bio below or as another shorter bio with separate information. The choice is yours, be creative!
+			</p>
+		</div>
+		<!-- Add link to image " " after src= this image is your image see  left to bio -->
+		<div id="longbio"><img id="aboutphoto" alt="personalphoto" src=""/>This is where your most substantial bio would be written. You could include personal details such as your favorite books, your profession, what your studying, your hobbies or even your goals. Another option is to also include information about the goals of your blog or website such as the content you enjoy writing about, project you wished to do through the website or what you have already achieved. Perhaps even include when you began your website and why you did. This bio can be large in length and if it exceeds the height of the photo to the left it will wrap around the bottom, still allowing the page to look attractive.
+		<!-- fill email in after <a href=" " so people can contact you-->
+		<h3 id="email">Contact: <a href="mailto:exampleemail@gmail.com?Subject=Inquiry" target="_top">Email me</a></h3>
+		<hr>
+	</div>
+	</div>
+</body>
+</html>
