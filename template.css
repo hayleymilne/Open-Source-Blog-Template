@@ -162,7 +162,7 @@ div::before{
 /*Right of page containing titles of blogposts,time stamps,header,and blogposts */
 #content{
 	top: 0px;
-	position: absolute;
+	position: relative;
 	max-width: 74%;
 	min-width: 1%;
 	margin-left: 300px;
